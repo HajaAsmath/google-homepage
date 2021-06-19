@@ -1,5 +1,6 @@
 body, html{
     height: 100%;
+    width: auto;
     display: block;
     margin: 0px;
     padding: 0px;
@@ -169,4 +170,13 @@ footer {
 .footer-ele a {
     color: rgba(0,0,0,.54);
     font-size: 14px;
+}
+
+@media (max-width: 660px) {
+    #search-box {
+        width: 100%;
+    }
+
+    #search-input {
+    }
 }
