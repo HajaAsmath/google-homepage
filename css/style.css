@@ -1,31 +1,11 @@
 body, html{
-    height: 100%;
-    width: auto;
-    display: block;
     margin: 0px;
     padding: 0px;
     font-family: arial,sans-serif;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-header {
-    height: 7%;
-}
-
-main {
-    height: 83%;
-}
-
-.nav {
+nav{
     padding: 1em 0em 1em 0em ;
-}
-
-.topnav{
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
@@ -33,7 +13,7 @@ main {
 }
 
 a{
-    padding-right: 19px;
+    padding: 0px 10px;
     color: black;
     text-decoration: none;
     font-size: small;
@@ -42,6 +22,7 @@ a{
 a:hover {
     text-decoration: underline;
 }
+
 
 .logo {
     display: inline-block;
@@ -61,9 +42,9 @@ a:hover {
 
 .img {
     display: flex;
-    height: 40%;
     justify-content: center;
     align-items: flex-end;
+    height: 30vh;
 }
 
 .search {
@@ -71,7 +52,6 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 17%;
 }
 
 #search-box {
@@ -105,6 +85,7 @@ a:hover {
 
 .search span {
     color: #a9aaad;
+    padding-left: 7px;
 }
 
 .search img {
@@ -137,34 +118,34 @@ a:hover {
     text-align: center;
     font-size: 13px;
     height: 43%;
+    padding-top: 15px;
 }
 
 #language a{
     padding-right: 5px;
     color: rgb(15, 15, 156);
 }
+
 footer {
-    height: 10%;
+    position: absolute;
+    bottom: 0;
     background: #f2f2f2;
     font-size: 15px;
     color: rgba(0,0,0,.54);
-    padding: 0px 20px;
+    width: 100%;
 }
 
 .footer{
-    height: 49%;
-    display: flex;
     border-bottom: 1px solid #dadce0;
-    flex-direction: column;
-    justify-content: center;
+    padding: 15px 0px 15px 10px;
 }
 
 .footer-ele {
-    height: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 15px 0px 15px 10px;
 }
 
 .footer-ele a {
@@ -177,6 +158,12 @@ footer {
         width: 100%;
     }
 
-    #search-input {
+    #search-buttons input {
+        margin: 3px 3px;
+    }
+
+    .footer-ele {
+        display: flex;
+        flex-direction: column;
     }
 }
